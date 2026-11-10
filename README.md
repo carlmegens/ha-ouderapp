@@ -10,9 +10,15 @@ Voor Konnect/Ovivio-ouderportalen, met De Eerste Stap als eerste beoogde praktij
 
 Repository: [carlmegens/KonnectHACS](https://github.com/carlmegens/KonnectHACS).
 
-## Installeren via HACS
+## Installeren via Marketplace of HACS
 
-Vereist: Home Assistant Core **2026.8.3 of hoger**, HACS en je OuderApp-account. Maak voor deze eerste testversie een HA-back-up.
+Vanaf Home Assistant **2026.11** staat Marketplace onder **Instellingen → Marketplace**. Dit is de opvolger van HACS en gebruikt dezelfde catalogus. Op oudere ondersteunde HA-versies gebruik je HACS. De bestaande installatieknop hierboven opent de juiste omgeving voor jouw HA-versie.
+
+De aanmelding voor de gedeelde standaardcatalogus wordt voorbereid. Tot de beheerders deze hebben goedgekeurd, voeg je de repository met de installatieknop of als aangepaste repository toe.
+
+### Installatiestappen
+
+Vereist: Home Assistant Core **2026.8.3 of hoger**, Marketplace of HACS en je OuderApp-account. Maak voor deze eerste testversie een HA-back-up.
 
 1. Klik op **Open OuderApp in HACS** hierboven. Kies zo nodig het adres van je Home Assistant-installatie.
 2. Voeg de repository toe en kies **Downloaden**. Handmatig toevoegen in HACS kan via **Aangepaste repositories**, adres `https://github.com/carlmegens/KonnectHACS`, type **Integratie**.
@@ -20,7 +26,7 @@ Vereist: Home Assistant Core **2026.8.3 of hoger**, HACS en je OuderApp-account.
 4. Ga naar **Instellingen → Apparaten en diensten → Integratie toevoegen**, zoek **OuderApp (Konnect)** en meld je aan. Voor De Eerste Stap vul je bij **Portaal** `deeerstestap` in.
 5. Herlaad je browser en open het nieuwe **OuderApp-apparaat**. Klik op een teller om de tijdlijn, het nieuws of de gesprekken te openen.
 
-De integratie en de bijbehorende kaart/pop-ups worden samen geïnstalleerd. Een apart dashboard is niet nodig. Deze aangepaste HACS-repository gebruikt de bestanden op `main`; opname in de standaardcatalogus is niet aangevraagd. Zie ook de [HACS-instructies voor aangepaste repositories](https://www.hacs.xyz/docs/faq/custom_repositories/).
+De integratie en de bijbehorende kaart/pop-ups worden samen geïnstalleerd. Een apart dashboard is niet nodig. Deze repository kan alvast handmatig worden toegevoegd. Opname in de standaardcatalogus is pas definitief na goedkeuring door de catalogusbeheerders. Zie ook de [HACS-instructies voor aangepaste repositories](https://www.hacs.xyz/docs/faq/custom_repositories/).
 
 ## De nieuwsteller werkt, maar berichten laden niet
 
@@ -45,7 +51,7 @@ Er worden geen berichten verstuurd, opvangaanvragen gedaan of expliciete markeer
 
 ## Handmatige installatie als alternatief
 
-Vereist: Home Assistant Core **2026.8.3 of hoger**, met Python 3.14.2 of hoger binnen 3.14. Latere HA-versies zijn nog niet getest.
+Vereist: Home Assistant Core **2026.8.3 of hoger**, met Python 3.14.2 of hoger binnen 3.14. De functionele HA-tests gebruiken Core 2026.8.3; de actuele hassfest- en cataloguscontroles draaien aanvullend op GitHub.
 
 1. Maak een HA-back-up en gebruik voor de eerste proef bij voorkeur een testinstallatie.
 2. Pak `ouderapp-0.5.6-candidate-install.zip` uit in de HA-configuratiemap. Controleer dat `custom_components/ouderapp/manifest.json` bestaat.
@@ -207,3 +213,5 @@ Versie 0.5.6 herstelt `planning.child`: sommige kindidentificaties zijn tekstwaa
 De beheerderactie geeft bij fouten uitsluitend een begrensde diagnosecode, bijvoorbeeld `planning.child`, `planning.time` of `planning.source`. Aanmeldproblemen blijven apart. Geef bij een fout alleen die code en integratieversie door.
 
 **Opvang is niet automatisch BSO.** De huidige planningprojectie kent geen bewezen onderscheid tussen BSO en andere opvangsoorten. `attend` betekent Gepland; tijden, boekingsstatus en een vereiste bevestiging bewijzen de opvangsoort niet. Gebruik op dashboards de neutrale naam Opvang totdat die classificatie afzonderlijk is aangetoond.
+
+De publicatiecontroles omvatten ook de officiële HACS-actie zonder overgeslagen controles en Home Assistant hassfest. Zie de [actuele Marketplace-aanmeldprocedure](https://contributors.home-assistant.io/marketplace/guides/catalog/).
