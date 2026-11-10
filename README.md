@@ -14,7 +14,7 @@ Repository: [carlmegens/ha-ouderapp](https://github.com/carlmegens/ha-ouderapp).
 
 Vanaf Home Assistant **2026.11** staat Marketplace onder **Instellingen → Marketplace**. Dit is de opvolger van HACS en gebruikt dezelfde catalogus. Op oudere ondersteunde HA-versies gebruik je HACS. De bestaande installatieknop hierboven opent de juiste omgeving voor jouw HA-versie.
 
-De [aanvraag voor opname in de gedeelde Marketplace/HACS-catalogus](https://github.com/hacs/default/pull/13846) is ingediend. Tot de beheerders deze hebben goedgekeurd, voeg je de repository met de installatieknop of als aangepaste repository toe. De [nieuwste release](https://github.com/carlmegens/ha-ouderapp/releases/latest) is al beschikbaar.
+De [aanvraag voor opname in de gedeelde Marketplace/HACS-catalogus](https://github.com/hacs/default/pull/13850) is ingediend. Tot de beheerders deze hebben goedgekeurd, voeg je de repository met de installatieknop of als aangepaste repository toe. De [nieuwste release](https://github.com/carlmegens/ha-ouderapp/releases/latest) is al beschikbaar.
 
 ### Installatiestappen
 

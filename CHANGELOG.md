@@ -2,7 +2,7 @@
 
 ## 0.5.7 — repositorynaam voor catalogusopname
 
-De repository heet nu `carlmegens/ha-ouderapp`. Installatieknop, documentatie, probleemmeldingen en pakketnaam verwijzen naar deze naam. De bestaande Marketplace/HACS-aanvraag #13846 wordt bijgewerkt. De integratienaam en het domein `ouderapp` blijven gelijk; er is geen nieuwe koppeling nodig. De kalenderexport gebruikt de nieuwe projectnaam in de productvermelding en behoudt bestaande gebeurtenisidentificaties.
+De repository heet nu `carlmegens/ha-ouderapp`. Installatieknop, documentatie, probleemmeldingen en pakketnaam verwijzen naar deze naam. De Marketplace/HACS-aanmelding loopt via aanvraag #13850, ter vervanging van de door de catalogusbot gesloten aanvraag #13846. De integratienaam en het domein `ouderapp` blijven gelijk; er is geen nieuwe koppeling nodig. De kalenderexport gebruikt de nieuwe projectnaam in de productvermelding en behoudt bestaande gebeurtenisidentificaties.
 
 ## 0.5.6 — planning met tekstidentificaties herstellen
 
