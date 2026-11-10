@@ -1,5 +1,9 @@
 # Wijzigingen
 
+## 0.5.7 — repositorynaam voor catalogusopname
+
+De repository heet nu `carlmegens/ha-ouderapp`. Installatieknop, documentatie, probleemmeldingen en pakketnaam verwijzen naar deze naam. De bestaande Marketplace/HACS-aanvraag #13846 wordt bijgewerkt. De integratienaam en het domein `ouderapp` blijven gelijk; er is geen nieuwe koppeling nodig. De kalenderexport gebruikt de nieuwe projectnaam in de productvermelding en behoudt bestaande gebeurtenisidentificaties.
+
 ## 0.5.6 — planning met tekstidentificaties herstellen
 
 De planning accepteert nu begrensde tekstidentificaties voor kinderen, naast positieve numerieke identifiers. Voorheen werd de validator voor gespreksnummers hergebruikt; daardoor kon een geldig planningantwoord falen met `planning.child`. De fix is vóór deze release gericht in Home Assistant toegepast en het ophalen van JSON-planning is daar bevestigd.

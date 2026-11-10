@@ -32,7 +32,7 @@ def test_build_exact_source_inventory_and_reproducibility(tmp_path):
                 == (ROOT / MODULE.COMPONENT / name).read_bytes()
             )
     manifest = json.loads((ROOT / MODULE.COMPONENT / "manifest.json").read_text())
-    assert manifest["documentation"] == "https://github.com/carlmegens/KonnectHACS"
+    assert manifest["documentation"] == "https://github.com/carlmegens/ha-ouderapp"
     assert manifest["codeowners"] == ["@carlmegens"]
 
 

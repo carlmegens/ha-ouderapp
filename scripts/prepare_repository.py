@@ -116,7 +116,7 @@ def build(root: Path, output: Path) -> list[dict]:
         if source.is_symlink():
             raise ValueError("Symlink document refused")
         public[name] = source.read_bytes()
-    repository = archive(output / f"KonnectHACS-{version}-candidate-repository.zip", public)
+    repository = archive(output / f"ha-ouderapp-{version}-candidate-repository.zip", public)
     return [install, repository]
 
 

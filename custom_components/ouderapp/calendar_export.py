@@ -52,7 +52,7 @@ def export_calendar(planning: dict) -> str:
     lines = [
         "BEGIN:VCALENDAR",
         "VERSION:2.0",
-        "PRODID:-//KonnectHACS//OuderApp planning snapshot//NL",
+        "PRODID:-//ha-ouderapp//OuderApp planning snapshot//NL",
         "CALSCALE:GREGORIAN",
     ]
     stamp = _utc(planning["updated_at"])
