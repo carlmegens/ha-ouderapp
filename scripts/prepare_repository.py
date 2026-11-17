@@ -1,4 +1,4 @@
-"""Build a deterministic local candidate and clean repository archive, never publish."""
+"""Build deterministic installation and repository archives, never publish."""
 
 from __future__ import annotations
 
@@ -109,14 +109,14 @@ def archive(path: Path, files: dict[str, bytes]) -> dict:
 
 def build(root: Path, output: Path) -> list[dict]:
     version, files = collect(root)
-    install = archive(output / f"ouderapp-{version}-candidate-install.zip", files)
+    install = archive(output / f"ouderapp-{version}-install.zip", files)
     public = dict(files)
     for name in (*PUBLIC_DOCS, *DEVELOPMENT_FILES):
         source = root / name
         if source.is_symlink():
             raise ValueError("Symlink document refused")
         public[name] = source.read_bytes()
-    repository = archive(output / f"ha-ouderapp-{version}-candidate-repository.zip", public)
+    repository = archive(output / f"ha-ouderapp-{version}-repository.zip", public)
     return [install, repository]
 
 

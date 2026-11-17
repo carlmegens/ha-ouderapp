@@ -1,5 +1,11 @@
 # Wijzigingen
 
+## 1.0.0 — eerste hoofdrelease
+
+OuderApp (Konnect) is opgenomen in de standaardcatalogus van Marketplace en HACS. Deze release bundelt de bestaande functies: aanmelding en sessievernieuwing, tellers, tijdlijn, nieuws, nieuwsbrieven, gesprekken en opvangplanning met kalenderexport.
+
+Installatie-instructies, frontendversie en downloadnamen zijn bijgewerkt naar 1.0.0. Bestaande accounts en entiteiten blijven behouden; opnieuw koppelen is niet nodig. Deze versie introduceert geen nieuwe inhoudsfuncties. De gedocumenteerde beperkingen en nog afzonderlijk te controleren praktijkfuncties blijven van toepassing.
+
 ## 0.5.7 — repositorynaam voor catalogusopname
 
 De repository heet nu `carlmegens/ha-ouderapp`. Installatieknop, documentatie, probleemmeldingen en pakketnaam verwijzen naar deze naam. De Marketplace/HACS-aanmelding loopt via aanvraag #13850, ter vervanging van de door de catalogusbot gesloten aanvraag #13846. De integratienaam en het domein `ouderapp` blijven gelijk; er is geen nieuwe koppeling nodig. De kalenderexport gebruikt de nieuwe projectnaam in de productvermelding en behoudt bestaande gebeurtenisidentificaties.
