@@ -14,19 +14,19 @@ Repository: [carlmegens/ha-ouderapp](https://github.com/carlmegens/ha-ouderapp).
 
 Vanaf Home Assistant **2026.11** staat Marketplace onder **Instellingen → Marketplace**. Dit is de opvolger van HACS en gebruikt dezelfde catalogus. Op oudere ondersteunde HA-versies gebruik je HACS. De bestaande installatieknop hierboven opent de juiste omgeving voor jouw HA-versie.
 
-De [aanvraag voor opname in de gedeelde Marketplace/HACS-catalogus](https://github.com/hacs/default/pull/13850) is ingediend. Tot de beheerders deze hebben goedgekeurd, voeg je de repository met de installatieknop of als aangepaste repository toe. De [nieuwste release](https://github.com/carlmegens/ha-ouderapp/releases/latest) is al beschikbaar.
+OuderApp is op **16 november 2026** [opgenomen in de gedeelde Marketplace/HACS-catalogus](https://github.com/hacs/default/pull/13850). Zoek naar **OuderApp (Konnect)** of gebruik de installatieknop hierboven. De [nieuwste release](https://github.com/carlmegens/ha-ouderapp/releases/latest) is beschikbaar op GitHub.
 
 ### Installatiestappen
 
 Vereist: Home Assistant Core **2026.8.3 of hoger**, Marketplace of HACS en je OuderApp-account. Maak voor deze eerste testversie een HA-back-up.
 
 1. Klik op **Open OuderApp in HACS** hierboven. Kies zo nodig het adres van je Home Assistant-installatie.
-2. Voeg de repository toe en kies **Downloaden**. Handmatig toevoegen in HACS kan via **Aangepaste repositories**, adres `https://github.com/carlmegens/ha-ouderapp`, type **Integratie**.
+2. Zoek **OuderApp (Konnect)** in Marketplace of HACS en kies **Downloaden**. Als de catalogus nog niet is bijgewerkt, kun je de repository tijdelijk toevoegen via **Aangepaste repositories**, adres `https://github.com/carlmegens/ha-ouderapp`, type **Integratie**.
 3. Herstart Home Assistant.
 4. Ga naar **Instellingen → Apparaten en diensten → Integratie toevoegen**, zoek **OuderApp (Konnect)** en meld je aan. Voor De Eerste Stap vul je bij **Portaal** `deeerstestap` in.
 5. Herlaad je browser en open het nieuwe **OuderApp-apparaat**. Klik op een teller om de tijdlijn, het nieuws of de gesprekken te openen.
 
-De integratie en de bijbehorende kaart/pop-ups worden samen geïnstalleerd. Een apart dashboard is niet nodig. Deze repository kan alvast handmatig worden toegevoegd. Opname in de standaardcatalogus is pas definitief na goedkeuring door de catalogusbeheerders. Zie ook de [HACS-instructies voor aangepaste repositories](https://www.hacs.xyz/docs/faq/custom_repositories/).
+De integratie en de bijbehorende kaart/pop-ups worden samen geïnstalleerd. Een apart dashboard is niet nodig. Bestaande installaties hoeven na de catalogusopname niet opnieuw te worden toegevoegd.
 
 ## De nieuwsteller werkt, maar berichten laden niet
 
